@@ -13,6 +13,7 @@ h5 {
 h1 {
   font-family: "Fraunces";
   font-weight: 700;
+  font-size: 32px;
 }
 
 p {
@@ -31,7 +32,7 @@ p {
 .card {
   display: flex;
   flex: 1;
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -41,6 +42,64 @@ p {
 .card-content {
   display: flex;
   flex: 1;
-  padding: 16px;
+  padding: 0 24px 24px 24px;
   flex-direction: column;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.per-price {
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 32px;
+  color: hsl(158, 36%, 37%);
+}
+
+.of-price {
+  margin-left: 12px;
+  font-family: "Fraunces";
+  color: hsl(228, 12%, 48%);
+  text-decoration-line: line-through;
+}
+
+button {
+  display: flex;
+  background-color: hsl(158, 36%, 37%);
+  height: 52px;
+  border-radius: 0.5rem;
+  border-width: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background-color: hsl(158, 36%, 16%);
+  transition: 0.5s;
+  transition-timing-function: linear;
+}
+
+.button-title {
+  font-size: 16px;
+  margin-left: 12px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+@media screen and (min-width: 640px) and (max-width: 1440px) {
+  .card {
+    flex-direction: row;
+  }
+  .card-img {
+    content: url("./images/image-product-desktop.jpg");
+    object-fit: fill;
+    height: 100%;
+    width: 50%;
+    border-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
 }
