@@ -28,15 +28,22 @@
   </head>
   <body>
     <div class="card">
-      <img
-        class="card-img"
-        alt="Card picture"
-        src="./images/image-product-mobile.jpg"
-      />
+      <picture>
+        <source
+          media="(min-width:640px)"
+          srcset="images/image-product-desktop.jpg"
+        />
+
+        <img
+          class="card-img"
+          src="images/image-product-mobile.jpg"
+          alt="Card picture"
+        />
+      </picture>
       <section class="card-content">
         <div class="general-information">
           <section>
-            <h5>P E R F U M E</h5>
+            <p>P E R F U M E</p>
             <h1>Gabrielle Essence Eau De Parfum</h1>
           </section>
           <p>
